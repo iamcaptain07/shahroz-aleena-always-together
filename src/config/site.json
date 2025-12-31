@@ -1,0 +1,20 @@
+{
+  "year": "2026",
+  "names": {
+    "proposer": "Your Name",
+    "recipient": "Aleena"
+  },
+  "colors": {
+    "navy": "#071429",
+    "gold": "#D4AF37",
+    "blush": "#FFCAD4",
+    "ivory": "#F8F1E7"
+  },
+  "newYearBanner": "New Year. New Beginning.",
+  "messages": {
+    "acceptButton": "Accept proposal",
+    "readStoryButton": "Read our story",
+    "celebrated": "She said yes!"
+  }
+}
+

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Subtle fireworks/sparkles background -->
+  <defs>
+    <radialGradient id="sparkleGrad" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Sparkle 1 -->
+  <circle cx="100" cy="80" r="3" fill="#D4AF37" opacity="0.6">
+    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Sparkle 2 -->
+  <circle cx="320" cy="120" r="2.5" fill="#FFCAD4" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Sparkle 3 -->
+  <circle cx="200" cy="60" r="2" fill="#D4AF37" opacity="0.4">
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Sparkle 4 -->
+  <circle cx="80" cy="200" r="2.5" fill="#FFCAD4" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Sparkle 5 -->
+  <circle cx="340" cy="280" r="3" fill="#D4AF37" opacity="0.6">
+    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Sparkle 6 -->
+  <circle cx="150" cy="320" r="2" fill="#FFCAD4" opacity="0.4">
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Subtle radial gradient overlay -->
+  <circle cx="200" cy="200" r="150" fill="url(#sparkleGrad)" opacity="0.1"/>
+</svg>
+
