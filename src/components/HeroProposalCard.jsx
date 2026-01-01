@@ -1,6 +1,15 @@
 import { motion } from 'framer-motion';
 
-const proposalMessage = `I understood ❤️  
+const originalProposalMessage = `Aleena, this hiding and silence has gone on for too long.
+Sometimes there is a message, sometimes a conversation, and then nothing.
+So much time has passed that I feel like I keep asking unnecessary questions.
+To keep it short and honest, I want to say that I really like you and you mean something to me.
+Please accept my proposal.
+From the very first day, I was thinking about how to message you and what to say.
+Then a fight happened in the group and I finally got a chance to speak.
+Otherwise, I honestly have no interest in anyone's arguments or fights.`;
+
+const newProposalMessage = `I understood ❤️  
 I am making this smooth, natural, and straight from the heart—slightly classy, slightly emotional, and completely in your own words:  
 It was the second day of class when my eyes first rested on you. The reason was that you neither spoke much nor talked to everyone—just silently immersed in your work. Even in that silence, there was a unique charm. You were always wearing a mask, so I had never seen your full face.  
 Then, 3–4 days later, when you were standing outside the girls' washroom and your mask was slightly down, I saw you fully for the first time. To be honest, after that moment, nothing else was visible in the university. You looked so beautiful—that day onwards I started going to university every day. Earlier, I went only for classes, but now the reason had become you.  
@@ -57,13 +66,34 @@ export default function HeroProposalCard() {
             <div className="w-24 h-0.5 bg-gold/30 mx-auto"></div>
           </div>
 
-          <blockquote className="text-lg md:text-xl lg:text-2xl font-heading text-ivory leading-relaxed text-justify">
-            {proposalMessage.split('\n').map((paragraph, index) => (
-              <p key={index} className="mb-4 last:mb-0">
-                {paragraph}
-              </p>
-            ))}
-          </blockquote>
+          {/* Original Proposal Message */}
+          <div className="mb-8">
+            <blockquote className="text-lg md:text-xl lg:text-2xl font-heading text-ivory leading-relaxed text-justify">
+              {originalProposalMessage.split('\n').map((paragraph, index) => (
+                <p key={`original-${index}`} className="mb-4 last:mb-0">
+                  {paragraph}
+                </p>
+              ))}
+            </blockquote>
+          </div>
+
+          {/* Divider */}
+          <div className="my-8 flex items-center justify-center">
+            <div className="w-24 h-0.5 bg-gold/30"></div>
+            <span className="mx-4 text-gold/60 text-xl">✨</span>
+            <div className="w-24 h-0.5 bg-gold/30"></div>
+          </div>
+
+          {/* New Proposal Message */}
+          <div className="mt-8">
+            <blockquote className="text-lg md:text-xl lg:text-2xl font-heading text-ivory leading-relaxed text-justify">
+              {newProposalMessage.split('\n').map((paragraph, index) => (
+                <p key={`new-${index}`} className="mb-4 last:mb-0">
+                  {paragraph}
+                </p>
+              ))}
+            </blockquote>
+          </div>
 
           {/* Closing */}
           <div className="mt-8 text-right">
