@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 
-const proposalMessage = `Aleena, this hiding and silence has gone on for too long.
-Sometimes there is a message, sometimes a conversation, and then nothing.
-So much time has passed that I feel like I keep asking unnecessary questions.
-To keep it short and honest, I want to say that I really like you and you mean something to me.
-Please accept my proposal.
-From the very first day, I was thinking about how to message you and what to say.
-Then a fight happened in the group and I finally got a chance to speak.
-Otherwise, I honestly have no interest in anyone's arguments or fights.`;
+const proposalMessage = `I understood ❤️  
+I am making this smooth, natural, and straight from the heart—slightly classy, slightly emotional, and completely in your own words:  
+It was the second day of class when my eyes first rested on you. The reason was that you neither spoke much nor talked to everyone—just silently immersed in your work. Even in that silence, there was a unique charm. You were always wearing a mask, so I had never seen your full face.  
+Then, 3–4 days later, when you were standing outside the girls' washroom and your mask was slightly down, I saw you fully for the first time. To be honest, after that moment, nothing else was visible in the university. You looked so beautiful—that day onwards I started going to university every day. Earlier, I went only for classes, but now the reason had become you.  
+I wanted to talk to you, but I couldn't muster the courage. Your friends were always with you, leaving no opportunity. I knew your name, I knew your number, yet still couldn't talk to you—maybe because it's hardest to speak to the one closest to your heart.  
+Your beauty isn't limited to your face. There is a strange depth in your eyes that says so much without saying anything. Your smile brings peace to the heart, like a tired soul finally finding rest. Your style is very simple, yet very special, and your presence makes the whole environment feel better.  
+You are not only beautiful—your character, manners, and gentleness make you even more lovely. In today's time, where beauty is often just show, your beauty seems connected to nature—pure, peaceful, and touching the heart.  
+To be honest, seeing you makes it clear that beauty isn't just about looks, but the feeling one experiences from someone's presence—and you are that feeling.`;
 
 export default function HeroProposalCard() {
   return (
