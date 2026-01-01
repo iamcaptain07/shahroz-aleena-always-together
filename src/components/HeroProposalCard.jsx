@@ -9,8 +9,7 @@ From the very first day, I was thinking about how to message you and what to say
 Then a fight happened in the group and I finally got a chance to speak.
 Otherwise, I honestly have no interest in anyone's arguments or fights.`;
 
-const newProposalMessage = `I understood ❤️  
-I am making this smooth, natural, and straight from the heart—slightly classy, slightly emotional, and completely in your own words:  
+const newProposalMessage = `
 It was the second day of class when my eyes first rested on you. The reason was that you neither spoke much nor talked to everyone—just silently immersed in your work. Even in that silence, there was a unique charm. You were always wearing a mask, so I had never seen your full face.  
 Then, 3–4 days later, when you were standing outside the girls' washroom and your mask was slightly down, I saw you fully for the first time. To be honest, after that moment, nothing else was visible in the university. You looked so beautiful—that day onwards I started going to university every day. Earlier, I went only for classes, but now the reason had become you.  
 I wanted to talk to you, but I couldn't muster the courage. Your friends were always with you, leaving no opportunity. I knew your name, I knew your number, yet still couldn't talk to you—maybe because it's hardest to speak to the one closest to your heart.  
