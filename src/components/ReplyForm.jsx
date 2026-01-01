@@ -84,9 +84,15 @@ export default function ReplyForm({ onSuccess }) {
     }
   };
 
+  const responseOptions = [
+    { value: 'accept', label: 'Accept', emoji: '💍' },
+    { value: 'need-time', label: 'Need Time', emoji: '⏰' },
+    { value: 'decline', label: 'Decline', emoji: '💔', isDecline: true },
+  ];
+
   const handleCelebrationClose = () => {
     setShowCelebration(false);
-    if (onSuccess) onSuccess();
+    // Don't call onSuccess here, let user see WhatsApp button
   };
 
   const handleWhatsApp = () => {
@@ -96,12 +102,6 @@ export default function ReplyForm({ onSuccess }) {
     const phoneNumber = '923269462014'; // +92 326 9462014 without spaces and +
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
   };
-
-  const responseOptions = [
-    { value: 'accept', label: 'Accept', emoji: '💍' },
-    { value: 'need-time', label: 'Need Time', emoji: '⏰' },
-    { value: 'decline', label: 'Decline', emoji: '💔', isDecline: true },
-  ];
 
   const handleDeclineHover = (e) => {
     // Make decline button move away slightly on hover (playful interaction)
@@ -316,7 +316,7 @@ export default function ReplyForm({ onSuccess }) {
             onClick={handleCelebrationClose}
             className="px-6 py-2 bg-gold text-navy rounded-lg font-medium hover:bg-gold/90 transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-navy"
           >
-            Continue
+            Close
           </button>
         </div>
       </Modal>
