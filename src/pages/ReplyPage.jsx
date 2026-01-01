@@ -32,7 +32,34 @@ export default function ReplyPage() {
 
   const handleSendViaWhatsApp = (reply) => {
     const responseLabel = getResponseLabel(reply.response);
-    const whatsappMessage = `Response: ${responseLabel}\n\nMessage:\n${reply.message || 'No additional message'}`;
+    
+    let whatsappMessage = '';
+    const responseType = reply.response;
+    
+    if (responseType === 'accept') {
+      whatsappMessage = `💍 *YES! I Accept Your Proposal* 💍\n\n`;
+      whatsappMessage += `I'm so happy and excited to say yes to your proposal!\n\n`;
+      if (reply.message && reply.message.trim()) {
+        whatsappMessage += `💌 *My message to you:*\n${reply.message}\n\n`;
+      }
+      whatsappMessage += `✨ Here's to our beautiful journey together! ✨\n`;
+      whatsappMessage += `💕 Forever and always...`;
+    } else if (responseType === 'need-time') {
+      whatsappMessage = `⏰ *I Need Some Time* ⏰\n\n`;
+      whatsappMessage += `Thank you for your beautiful proposal. I need a little more time to think about this important decision.\n\n`;
+      if (reply.message && reply.message.trim()) {
+        whatsappMessage += `💌 *My message to you:*\n${reply.message}\n\n`;
+      }
+      whatsappMessage += `I'll get back to you soon. Please understand. 💕`;
+    } else {
+      whatsappMessage = `💔 *My Response: ${responseLabel}* 💔\n\n`;
+      if (reply.message && reply.message.trim()) {
+        whatsappMessage += `💌 *My message to you:*\n${reply.message}`;
+      } else {
+        whatsappMessage += `Thank you for your proposal.`;
+      }
+    }
+    
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const phoneNumber = '923269462014'; // +92 326 9462014 without spaces and +
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
